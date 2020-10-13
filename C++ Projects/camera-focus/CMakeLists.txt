@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(Focus_Measurement )
+find_package( OpenCV REQUIRED )
+add_executable( Focus_Measurement src/Focus_Measurement.cpp src/GraphUtils.cpp)
+target_link_libraries( Focus_Measurement ${OpenCV_LIBS} )
